@@ -1,4 +1,4 @@
-# BigQuery
+# bigquery-dl
 
 Download data from BigQuery and save results as JSON or CSV files.
 You can use temporary or cached authentication credentials.
