@@ -41,8 +41,6 @@ def main():
         # if the last query also ended with a semicolon the queries list last element is an empty string
         queries = queries[:-1] if queries[-1] == '' else queries
 
-        for q in queries:
-            print(q)
         # send SQL query to BigQuery
         result = map(lambda q: pgbq.read_gbq(q, args.project, credentials=credentials), queries)
     else:
